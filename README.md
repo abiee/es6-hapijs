@@ -1,6 +1,6 @@
 Another boring Hapijs Boilerplate
 ======================
-Simple Hapi.js project to build RESTful API's. The main goal of this project is to be built on top of ES6 instead plain JavaScript.
+Simple Hapi.js project to build RESTful API's. The main goal of this project is to be built on top of native ES6, it also adds compatibility to ES5 with Babel.
 
 What's inside
 ----------------
@@ -9,6 +9,8 @@ Batteries included:
  - gulp
  - Lab
  - Babel
+
+Note: This project is based on Node v5.x, so that Babel is used only for compatibility reasons to older Node versions. 
 
 Setup
 -----
@@ -21,13 +23,13 @@ Clone the repository and install the dependencies.
 
 Do not forget to install globally gulp if not installed yet.
 
-Build
-------
+Build for older Node versions
+-----
 If you want to build the project run.
 
     $ gulp build
 
-A dist folder will appear with all source scripts transpiled to JavaScript.
+A dist folder will appear with all source scripts transpiled to ES5.
 
 Testing
 ---------

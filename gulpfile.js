@@ -16,9 +16,6 @@ gulp.task('serve', function() {
   'use strict';
   $.nodemon({
     script: 'src/server.js',
-    execMap: {
-      'js': 'node_modules/babel/bin/babel-node'
-    },
     ignore: ['gulpfile.js', 'node_modules', 'test']
   });
 });
@@ -27,7 +24,7 @@ gulp.task('serve', function() {
 gulp.task('test', function() {
   'use strict';
   return gulp.src(['test/**/*.js', 'test/mocks/*.js'])
-    .pipe($.lab('-T node_modules/lab-babel'));
+    .pipe($.lab());
 });
 
 // Run tests and watch for changes to keep tests running

@@ -1,7 +1,7 @@
-import Code from 'code';
-import Lab from 'lab';
-import api from '../src/api';
-import mockServer from './mocks/server';
+var Code = require('code');
+var Lab = require('lab');
+var api = require('../src/api');
+var mockServer = require('./mocks/server');
 
 var lab = exports.lab = Lab.script();
 var describe = lab.describe;

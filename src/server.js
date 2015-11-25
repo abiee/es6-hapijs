@@ -1,6 +1,6 @@
-import Hapi from 'hapi';
-import good from 'good';
-import api from './api';
+var Hapi = require('hapi');
+var good = require('good');
+var api = require('./api');
 
 var server = new Hapi.Server();
 

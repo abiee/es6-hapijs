@@ -22,4 +22,4 @@ register.attributes = {
   name: 'api'
 };
 
-export default register;
+module.exports = register;

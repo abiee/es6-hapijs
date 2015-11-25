@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var argv = require('yargs').argv;
 
 // Transpile ES6 source files into JavaScript
 gulp.task('build', function() {
@@ -26,7 +27,13 @@ gulp.task('serve', function() {
 // Run lab tests
 gulp.task('test', function() {
   'use strict';
-  return gulp.src(['test/**/*.js', 'test/mocks/*.js'])
+  
+  var testPath = ['test/**/*.js', 'test/mocks/*.js'];
+  if (argv.f) {
+    testPath = ['test/' + argv.f];
+  }
+  
+  return gulp.src(testPath)
     .pipe($.lab('-T node_modules/lab-babel'));
 });
 

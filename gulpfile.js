@@ -11,7 +11,7 @@ gulp.task('build', function() {
     .pipe(gulp.dest('dist/'));
 });
 
-// Run Hapi server and realod on changes
+// Run Hapi server and reload on changes
 gulp.task('serve', function() {
   'use strict';
   $.nodemon({

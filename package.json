@@ -1,6 +1,6 @@
 {
   "name": "hapijs-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Another boring Hapi.js boilerplate written in ES6",
   "repository": {
     "type": "git",
@@ -8,7 +8,9 @@
   },
   "main": "server.js",
   "scripts": {
-    "test": "lab -t 100 test"
+    "start": "nodemon --watch src src/server.js",
+    "test": "lab -t 100 test",
+    "tdd": "nodemon --exec \"npm test\" --watch src --watch test"
   },
   "keywords": [
     "hapijs",
@@ -21,15 +23,11 @@
   "devDependencies": {
     "code": "^2.0.1",
     "good-console": "^5.0.0",
-    "gulp": "^3.8.11",
-    "gulp-cached": "^1.0.4",
-    "gulp-lab": "^1.0.5",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-nodemon": "^2.0.2",
     "lab": "^10.3.0"
   },
   "dependencies": {
     "good": "^6.1.2",
-    "hapi": "^13.2.2"
+    "hapi": "^13.2.2",
+    "nodemon": "^1.9.1"
   }
 }

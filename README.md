@@ -6,7 +6,6 @@ What's inside
 ----------------
 Batteries included:
  - Hapi.js
- - gulp
  - Lab
 
 Setup
@@ -16,19 +15,17 @@ Clone the repository and install the dependencies.
     $ git clone https://github.com/abiee/es6-hapi.git my-project
     $ cd my-project
     $ npm install
-    $ gulp serve
-
-Do not forget to install globally gulp if not installed yet.
+    $ npm start
 
 Testing
 ---------
 Two options exists to run tests, the first one is for development process and aims to practice Test Driven Development.
 
-    $ gulp tdd
+    $ npm run tdd
 
 The other option to just run tests once.
     
-    $ gulp test
+    $ npm test
 
 Contribution
 ---------------

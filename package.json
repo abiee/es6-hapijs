@@ -23,13 +23,13 @@
   "license": "MIT",
   "devDependencies": {
     "code": "^2.0.1",
+    "eslint": "^2.5.1",
     "good-console": "^5.0.0",
-    "lab": "^10.3.0"
+    "lab": "^10.3.0",
+    "nodemon": "^1.9.1"
   },
   "dependencies": {
-    "eslint": "^2.5.1",
     "good": "^6.1.2",
-    "hapi": "^13.2.2",
-    "nodemon": "^1.9.1"
+    "hapi": "^13.2.2"
   }
 }

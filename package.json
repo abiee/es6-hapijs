@@ -8,9 +8,9 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --watch src src/server.js",
+    "start": "nodemon --watch app --watch server.js server.js",
     "test": "lab -t 100 test",
-    "tdd": "nodemon --exec \"npm test\" --watch src --watch test"
+    "tdd": "nodemon --exec \"npm test\" --watch app --watch test --watch server.js"
   },
   "keywords": [
     "hapijs",

@@ -1,6 +1,6 @@
 var Code = require('code');
 var Lab = require('lab');
-var api = require('../src/api');
+var hello = require('../app/hello');
 var mockServer = require('./mocks/server');
 
 var lab = exports.lab = Lab.script();
@@ -17,7 +17,7 @@ before((done) => {
   mockServer(function(obj) {
     server = obj;
     server.register([{
-      register: api
+      register: hello
     }], done);
   });
 });
@@ -27,7 +27,7 @@ after((done) => {
   server.stop(done);
 });
 
-describe('Example api', function() {
+describe('Example hello api', function() {
   'use strict';
 
   it('says hello world', function(done) {

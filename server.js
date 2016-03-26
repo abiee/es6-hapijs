@@ -1,6 +1,6 @@
 var Hapi = require('hapi');
 var good = require('good');
-var api = require('./api');
+var hello = require('./app/hello');
 
 var server = new Hapi.Server();
 
@@ -18,7 +18,7 @@ server.register([{
     }]
   }
 }, {
-  register: api
+  register: hello
 }], function(err) {
   'use strict';
   if (err) {

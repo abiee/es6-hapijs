@@ -7,6 +7,7 @@ What's inside
 Batteries included:
  - Hapi.js
  - Lab
+ - Eslint
 
 Setup
 -----
@@ -26,6 +27,12 @@ Two options exists to run tests, the first one is for development process and ai
 The other option to just run tests once.
     
     $ npm test
+
+Linting
+---------
+Ensure the quality of your code with eslint.
+
+    $ npm run lint
 
 Contribution
 ---------------

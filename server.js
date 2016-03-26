@@ -22,10 +22,10 @@ server.register([{
 }], function(err) {
   'use strict';
   if (err) {
-    console.error(err);
+    console.error(err); // eslint-disable-line no-console
   } else {
     server.start(function() {
-      console.log('Server started at: ' + server.info.uri); // jshint ignore:line
+      console.log('Server started at: ' + server.info.uri); // eslint-disable-line no-console
     });
   }
 });

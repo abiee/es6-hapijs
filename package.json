@@ -1,6 +1,6 @@
 {
   "name": "hapijs-boilerplate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Another boring Hapi.js boilerplate written in ES6",
   "repository": {
     "type": "git",
@@ -10,7 +10,8 @@
   "scripts": {
     "start": "nodemon --watch app --watch server.js server.js",
     "test": "lab -t 100 test",
-    "tdd": "nodemon --exec \"npm test\" --watch app --watch test --watch server.js"
+    "tdd": "nodemon --exec \"npm test\" --watch app --watch test --watch server.js",
+    "lint": "eslint server.js app test || true"
   },
   "keywords": [
     "hapijs",
@@ -26,6 +27,7 @@
     "lab": "^10.3.0"
   },
   "dependencies": {
+    "eslint": "^2.5.1",
     "good": "^6.1.2",
     "hapi": "^13.2.2",
     "nodemon": "^1.9.1"

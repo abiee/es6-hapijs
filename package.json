@@ -8,8 +8,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "test": "lab -t 100 test",
-    "prepublish": "gulp build"
+    "test": "lab -t 100 test"
   },
   "keywords": [
     "hapijs",
@@ -20,20 +19,17 @@
   "author": "Abiee Alejandro <abiee.alejandro@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-preset-es2015": "^6.1.18",
     "code": "^2.0.1",
-    "del": "^2.1.0",
     "good-console": "^5.0.0",
     "gulp": "^3.8.11",
-    "gulp-babel": "^6.1.0",
     "gulp-cached": "^1.0.4",
     "gulp-lab": "^1.0.5",
     "gulp-load-plugins": "^1.1.0",
     "gulp-nodemon": "^2.0.2",
-    "lab": "^7.3.0"
+    "lab": "^10.3.0"
   },
   "dependencies": {
     "good": "^6.1.2",
-    "hapi": "^11.1.2"
+    "hapi": "^13.2.2"
   }
 }

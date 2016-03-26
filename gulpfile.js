@@ -1,16 +1,6 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
-// Transpile ES6 source files into JavaScript
-gulp.task('build', function() {
-  'use strict';
-
-  return gulp.src(['src/**/*.js'])
-    .pipe($.cached('*.js'))
-    .pipe($.babel())
-    .pipe(gulp.dest('dist/'));
-});
-
 // Run Hapi server and reload on changes
 gulp.task('serve', function() {
   'use strict';
@@ -31,14 +21,6 @@ gulp.task('test', function() {
 gulp.task('tdd', ['test'], function() {
   'use strict';
   gulp.watch('{src,test}/**/*.js', ['test']);
-});
-
-// Clean built directory
-gulp.task('clean', function (callback) {
-  'use strict';
-
-  var del = require('del');
-  del(['dist'], callback);
 });
 
 gulp.task('default', ['build']);
